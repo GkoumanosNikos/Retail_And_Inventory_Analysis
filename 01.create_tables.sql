@@ -1,3 +1,4 @@
+
 CREATE TABLE `products` (
   `product_id` int NOT NULL,
   `product_name` varchar(45) DEFAULT NULL,
@@ -37,3 +38,7 @@ CREATE TABLE `inventory` (
   `stock_on_hand` int DEFAULT NULL,
   PRIMARY KEY (`store_id`,`product_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
