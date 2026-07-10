@@ -111,6 +111,25 @@ COUNT, ROUND, SUM, GROUP BY, ORDER BY
 
 This query evaluates which existing city could be the best candidate for opening an additional store. The analysis compares total revenue, gross profit, gross profit margin, total units sold, number of existing stores, revenue per store and profit per store. The purpose of this query is not only to identify the city with the highest total revenue, but also to understand which city performs well on a per-store basis.
 
+### Query 10: Which product categories perform best by month during the available sales period?
+** SQL Concepts Used: **
+YEAR, MONTH, SUM, ROUND, GROUP BY, ORDER BY
+
+![Query_10_Result](screenshots/query_10_category_revenue_per_month.png)
+
+** Insight: **
+
+This query examines the total sales and total revenues of each product category for every month. The available data of the dataset are until May 2022. So, the outcomes can be categorized until then. For every month, the query shows the highest category and the lowest. It can be used to show the most efficient product of every month.
+
+### Query 11: Which is the highest sales category of each city?
+** SQL Concepts Used: **
+SUM, FROM, GROUP BY
+
+![Query_11_Result](screenshots/query_11_sales_per_city_category.png)
+
+** Insight: **
+
+The query shows the total revenues of every category in every city. It is one of the most helpful queries, because it shows the categories which contiboute more to the total revenues in every city. So, it could be a different market targetting in every category in order to enhance the profitabillity.  
 
 
 
