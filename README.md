@@ -23,6 +23,7 @@ A SQL view named 'vw_sales_analysis' was created in order to include tables of s
 ## Business Questions and SQL Results
 ### Query 1: Which store generated more revenues across the years?
 ** SQL Concepts Used: **
+
 SUM, GROUP BY, ORDER BY
 
 ![Query 1 Result](screenshots/query_1_store_renenues.png)
@@ -33,6 +34,7 @@ The most profitable stores are in two cities: Cuidad de Mexico, Guadalajara. The
 
 ### Query 2: Which product generate the highest revenues?
 ** SQL Concepts Used: **
+
 SUM, GROUP BY, ORDER BY
 
 ![Query_2_Result](screenshots/query_2_products_revenues.png) 
@@ -43,6 +45,7 @@ This query shows the products and the categories that make the most revenues. Th
 
 ### Query 3: Which product has the highest Gross Profit Margin %
 ** SQL Concepts Used: **
+
 SUM, ROUND, GROUP BY, ORDER BY
 
 ![Query_3_Result](screenshots/query_3_highest_GPM.png)
@@ -53,6 +56,7 @@ This query calculates the Gross Profit Margin percentage of each product. This K
 
 ### Query 4: Which city generates the highest revenues?
 ** SQL Concepts Used: **
+
 SUM, GROUP BY, ORDER BY
 
 ![Query_4_Result](screenshots/query_4_revenues_per_city.png) 
@@ -63,6 +67,7 @@ This query aims to approve the most profitable city. The outcomes can be used fo
 
 ### Query 5: Top-5 store-category revenue combinations
 ** SQL Concepts Used: **
+
 SUM, GROUP BY, ORDER BY, LIMIT
 
 ![Query_5_Result](screenshots/query_5_top5_store_revenue.png) 
@@ -73,6 +78,7 @@ This query combines the 5 most profitables stores and categories. The outcomes s
 
 ### Query 6: What is the Gross Profit Margin of each store?
 ** SQL Concepts Used: **
+
 ROUND, SUM, GROUP BY, ORDER BY
 
 ![Query_6_Result](screenshots/query_6_GPM_per_store.png) 
@@ -83,6 +89,7 @@ This query identifies the stores with the highest gross profit margin percentage
 
 ### Query 7:  Which product category produce the highest Gross Profit Margin and which the lowest?
 ** SQL Concepts Used: **
+
 CASE, GROUP BY, SUM, ORDER BY
 
 ![Query_7_Result](screenshots/query_7_GPM_per_category-Αντιγραφή.png)
@@ -93,6 +100,7 @@ This query categorize every product category by taking into account the highest 
 
 ### Query 8: Which products may need to be reconsidered due to low Gross Profit Margin?
 ** SQL Concepts Used: **
+
 CASE, SUM, GROUP BY, ORDER BY, ROUND
 
 ![Query_8_Result](screenshots/query_8_product_reconsideration.png) 
@@ -103,6 +111,7 @@ One of the most powerful business queries of the project. This query identifies 
 
 ### Query 9: Which existing market would be the best candidate for opening a new store based on current sales performance?
 ** SQL Concepts Used: **
+
 COUNT, ROUND, SUM, GROUP BY, ORDER BY
 
 ![Query_9_Result](screenshots/query_9_market_candidate.png)
@@ -113,6 +122,7 @@ This query evaluates which existing city could be the best candidate for opening
 
 ### Query 10: Which product categories perform best by month during the available sales period?
 ** SQL Concepts Used: **
+
 YEAR, MONTH, SUM, ROUND, GROUP BY, ORDER BY
 
 ![Query_10_Result](screenshots/query_10_category_revenue_per_month.png)
@@ -123,6 +133,7 @@ This query examines the total sales and total revenues of each product category 
 
 ### Query 11: Which is the highest sales category of each city?
 ** SQL Concepts Used: **
+
 SUM, FROM, GROUP BY
 
 ![Query_11_Result](screenshots/query_11_sales_per_city_category.png)
@@ -131,7 +142,36 @@ SUM, FROM, GROUP BY
 
 The query shows the total revenues of every category in every city. It is one of the most helpful queries, because it shows the categories which contiboute more to the total revenues in every city. So, it could be a different market targetting in every category in order to enhance the profitabillity.  
 
+## Query 12: Scenario: We would like to decide where is the best location to open 3 more stores by taking into account the Revenues, the location and the Gross Profit Margin.
+** SQL Concepts Used: **
 
+COUNT, ROUND, SUM, GROUP BY, ORDER BY
 
+![Query_12_Result](screenshots/query_12_Scenario_1.png)
 
+** Insight: **
+
+The query is the first business scenario of the project. It contains outcomes which help the business to decide where is the best location to open more stores. It takes into account the Gross Profit Margin, the total units that sold in each location, the total revenues and also the profit and the revenue per store. The most profitable stores are these which located in the airports. So, an additional store in another airport is a candidate. The second best location is downtown, where the business has the most of the stores. 
+
+## Query 13: Scenario: The company wants to invest in a new product. Which product category should be prioritized for new product investment?
+** SQL Concepts Used: **
+
+COUNT, SUM, ROUND, GROUP BY, ORDER BY
+
+![Query_13_Result](screenshots/query_13_Scenario_2.png)
+
+** Insight: **
+
+In this scenario, the company wants to invest to a new product. In order to complete this purpose should take into account the profitability of each category. Electronics category offer the most value Gross Profit Margin, the highest profit per product and revenue per product. So, this query helps to identify which product should be prioritized for a potential investment by focusing on sales volume, Gross Profit Margin, total revenues, revenues per product and profit per product. 
+
+## Query 14: Scenario: The company wants to prioritize the restocking of products that perform high sales.
+** SQL Concepts Used: **
+
+SUM, MAX, ROUND, CASE, JOIN, GROUP BY, ORDER BY
+
+![Query_14_Result](screenshots/query_14_Scenario_14.png)
+
+** Insight: **
+
+The company wants to identify which of the products should be restocked as they perform high sales. It contains a CASE statement, which help the company to understand which of the products should be restocked. Products with high units sold and low available stock may require restocking attention, while products with strong revenue and gross profit may be good candidates for further commercial focus. The outcomes of the query show that restocking is not required, a fact which highlight that the strategy of the company in terms of restocking is good.  
 
