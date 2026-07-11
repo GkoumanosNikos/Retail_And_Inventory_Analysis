@@ -92,7 +92,7 @@ This query identifies the stores with the highest gross profit margin percentage
 
 CASE, GROUP BY, SUM, ORDER BY
 
-![Query_7_Result](screenshots/query_7_GPM_per_category-Αντιγραφή.png)
+![Query_7_Result](screenshots/query_7_GPM_per_category.png)
 
 ** Insight: **
 
