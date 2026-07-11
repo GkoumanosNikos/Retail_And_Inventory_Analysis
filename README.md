@@ -10,15 +10,21 @@ SQL, PowerBI analysis of Retail Company. The project aims to examine several out
 - Github
 
 ## Project Structure
-SQL/: contains database scripts, data insertion scripts, and business queries.
-screenshots/: contains screenshots of SQL query results.
-README.md: presents the project overview, business questions, results, and insights.
-powerbi/: contains the Power BI dashboard file and dashboard overview image.
+- `SQL/`: contains database scripts, data insertion scripts, and business queries.
+- `screenshots/`: contains screenshots of SQL query results.
+- `README.md`: presents the project overview, business questions, results, and insights.
+- `powerbi/`: contains the Power BI dashboard file and dashboard overview image.
 
 ## Database Overview
 The Database includes data from sales, inventory, store city and location, name of store, products, category of products and the date of transanctions.
-The main tablea are : 'sales', 'stores', 'inventory', 'products', 'calendar'.
-A SQL view named 'vw_sales_analysis' was created in order to include tables of sales, stores, inventiry, products, calendar.
+The main tablea are : 
+- 'sales',
+- 'stores',
+- 'inventory',
+- 'products',
+- 'calendar'.
+
+A SQL view named 'vw_sales_analysis' was created in order to include tables of sales, stores, inventory, products, calendar.
 
 ## Business Questions and SQL Results
 ### Query 1: Which store generated more revenues across the years?
@@ -174,4 +180,12 @@ SUM, MAX, ROUND, CASE, JOIN, GROUP BY, ORDER BY
 ** Insight: **
 
 The company wants to identify which of the products should be restocked as they perform high sales. It contains a CASE statement, which help the company to understand which of the products should be restocked. Products with high units sold and low available stock may require restocking attention, while products with strong revenue and gross profit may be good candidates for further commercial focus. The outcomes of the query show that restocking is not required, a fact which highlight that the strategy of the company in terms of restocking is good.  
+
+## Key Insights
+
+* The highest revenue-generating stores are located in Ciudad de Mexico and Guadalajara, making these cities strong candidates for further commercial investment.
+* Electronics, Games, and Toys are among the strongest revenue-generating categories.
+* Gross Profit Margin analysis shows that revenue alone is not enough to evaluate performance; some stores and categories perform better in profitability terms.
+* Airport locations show strong profitability and could be considered for future store expansion.
+* Based on the restocking analysis, current inventory levels appear sufficient for high-performing products, suggesting that the company’s restocking strategy is generally effective.
 
