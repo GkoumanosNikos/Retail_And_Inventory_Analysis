@@ -189,3 +189,18 @@ The company wants to identify which of the products should be restocked as they 
 * Airport locations show strong profitability and could be considered for future store expansion.
 * Based on the restocking analysis, current inventory levels appear sufficient for high-performing products, suggesting that the company’s restocking strategy is generally effective.
 
+
+## Power BI Dashboard
+
+A Power BI Dashboard was created to visualize the performance of the company. 
+
+The dashboard incudes:
+- An overview of financial performance
+- Total Revenue per category
+- Gross Profit per category
+- Product Performance Analysis
+- Top Products by Units Sold
+- Store & Location Analysis
+
+
+
