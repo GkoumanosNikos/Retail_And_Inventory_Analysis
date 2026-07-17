@@ -202,5 +202,21 @@ The dashboard incudes:
 - Top Products by Units Sold
 - Store & Location Analysis
 
+### Executive Overview
+
+
+![Executive Overview](powerbi/dashboard_overview.png)
+
+
+### Product Performance Analysis
+
+
+![Product Performance Analysis](powerbi/product_performance.png)
+
+
+### Store & Location Performance Analysis
+
+
+![Store & Location Analysis](powerbi/store&location_analysis.png)
 
 
